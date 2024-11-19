@@ -1,0 +1,17 @@
+.article {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  border-radius: 15px;
+  background-color: rgb(208, 208, 239);
+  border: 3px ridge var(--blue);
+  cursor: pointer;
+  padding: 0px 10px;
+  margin: 0px 10px;
+}
+
+.article .text {
+  font-size: 20px;
+  font-weight: 700;
+}

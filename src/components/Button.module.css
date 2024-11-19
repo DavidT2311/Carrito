@@ -1,0 +1,57 @@
+.blue {
+  background-color: #353eb9;
+  color: white;
+  width: 135px;
+  height: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: 3px solid #2f37a2;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+  margin: 5px 5px;
+}
+
+.blue:hover {
+  background-color: transparent;
+  color: #353eb9;
+}
+
+.green {
+  background-color: #68d48a;
+  color: white;
+  width: 135px;
+  height: 30px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 3px solid #52a76c;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+  margin: 5px 5px;
+}
+
+.green:hover {
+  background-color: transparent;
+  color: #52a76c;
+  transition: all 0.4s ease-out;
+  cursor: pointer;
+}
+
+.red {
+  background-color: #ba2d68;
+  color: white;
+  width: 135px;
+  height: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: 3px solid #962856;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+  margin: 5px 5px;
+}
+
+.red:hover {
+  background-color: transparent;
+  color: #962856;
+}

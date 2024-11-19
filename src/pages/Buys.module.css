@@ -1,0 +1,42 @@
+.main {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.main_section {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(200px, 1fr));
+  grid-template-rows: 50px minmax(120px, 1fr) 50px;
+  gap: 35px;
+  margin: 20px 20px;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.title {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  margin: 0;
+  align-content: center;
+  color: var(--dark-blue);
+}
+
+.main_intern_section {
+  grid-column: 1 / 6;
+  grid-row: 2 / 3;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: flex-start;
+  gap: 25px;
+  box-sizing: border-box;
+}
+
+.pagination {
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+  justify-self: center;
+  align-self: center;
+}
