@@ -18,6 +18,14 @@ const Cart = () => {
   const dispatch = useDispatch();
   const { cartProducts } = useSelector((state) => state.cart);
 
+  let totalPrice = 0;
+
+  if (cartProducts.length != 0) {
+    totalPrice = cartProducts
+      .map((item) => item.price * item.quantity)
+      .reduce((acc, act) => acc + act);
+  }
+
   useEffect(() => {
     console.log(cartProducts);
   }, [cartProducts]);
@@ -34,6 +42,10 @@ const Cart = () => {
             classes="green"
             handleEvent={() => dispatch(clearCart())}
           />
+
+          <span>
+            <strong>Precio total:</strong> {totalPrice}
+          </span>
           <section className={cartModule.cart_section}>
             <section className={cartModule.cart_intern_section}>
               {cartProducts
